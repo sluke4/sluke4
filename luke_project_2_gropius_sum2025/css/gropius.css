@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+{outline:1px solid red;}
+			/*BOX SIZING --ignores border and padding when calularing width*/
+			html{
+				box-sizing: border-box;
+			}
+			*, *:before, *:after {
+				box-sizing: inherit;}
+			
+			/* CLEARFIX HACK*/
+			.clearfix::after {
+  				 content: "";
+  				 clear: both;
+  				 display: table;
+			}
+			/*STRUCTURE*/
+				body {background-color: #555;}
+				.wrapper {
+						width:100%;
+						max-width:50rem;
+						background-color:#ddd; 
+						margin:0 auto;
+				
+				}
+			header, section, footer {padding:1.25rem 3.75rem;}
+				header, footer {color:white; background-color: #444;} 
+				section {border-bottom: 1rem solid #444;}
+			
+			/*IMAGES*/
+				figure {width:100%;max-width:18.75rem; float:right; margin:0 0 0 1rem;}
+				img{width:100%; margin-bottom:.625rem;}
+				figure .gropius {max-width:14rem;}
+				
+			/*TYPOGRAPHY*/
+			html {font-family:"Helvetica Neue", helvetica,arial, sans-serif;}
+			h1 {font-size:2.625;}
+			h2 {font-size:2.25rem;}
+			h3 {font-size:1.875rem;}
+			h4 {font-size:1.5rem;}
+			h5 {font-size:1.5rem;}
+			h6 {font-size:1.25rem;}
+			h3, h4, h5 {margin-bottom:.375;}
+			p {margin-top:0}
+			figcaption {font-size:.875rem; font-style:italic; margin-bottom:1rem;}
+			
+			/*NAV TYPE*/
+			nav {margin-bottom:2rem;}
+			nav ul {padding-left:0;}
+			nav li {lists-style:none; 
+				display:inline-block; 
+				margin-right:.75rem;
+				line-height:2.5rem;
+
+			}
+			
+			/*LINKS*/
+			a:link {color:#aaa; text-decoration:none;}
+			a:visited {color:#aaa;}
+			a:hover {color:aqua;}
+			a:focus {color:aqua;}
+			a:active {color:red;}
+			
+			main a:link {color:#777;}
+			main a:visited {color:#777;}
+			main a:hover {color:red;}
+			main a:focus {color:red;}
+			main a:active {color:red;}
+			
+			nav a:link, nav a:visited {
+				color:white; 
+				background-color:red; 
+				padding:.375rem; 
+				border-radius:.rem;
+			}
+			nav a:hover, nav a:focus, nav a:active {
+				color:white;
+				background-color:#BC0508;
