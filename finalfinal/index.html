@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Initial Structure</title>
+	<meta name="viewpoer" content="width=device-width, initial-scale=1"><!--this sets up site for mobile use -->
+	<meta name="description" content="demonstrtion of coding tables and forms">
+	<link rel="stylesheet" href="css/normalize.css"> <!--this links to normalize.css -->
+	<style>
+		*{outline:1px solid red;}
+		
+		/*BOX SIZING */
+		html {box-sizing:border-box;}
+		*, *:before, *:after {box-sizing:inherit}
+		
+		/*CLEARFIX */
+		
+		.clearfix::after {
+  			content: "";
+  			clear: both;
+  			display: table;
+		}
+		
+		body {margin: 0; padding:0;}
+		.logo {height:106.04px; width:174.14px; float:left;}
+		nav {height:34.05px; width:431.03px; float:right; margin-top:49.46px; margin-right:330.17px;}
+		header {height: 135.75px; padding:16.99px 30.17px 0 9.25px;}
+		
+	</style>
+</head>
+	<div id="wrap">
+		<header class="clearfix">
+			<div class="logo">Logo</div>
+			<nav>Nav</nav>	
+		</header>
+	</div>
+
+<body>
+</body>
+</html>
