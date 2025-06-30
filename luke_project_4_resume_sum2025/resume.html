@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Resume</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<style>
+			{outline:1px solid red;}
+		
+		html {box-sizing:border-box;}
+		*, *:before, *:after {box-sizing:inherit;}
+		body {margin:0; padding:0; background-color:#333;}
+		
+		/* STRUCTURE */
+		
+		#wrapper {width:792px; margin:0 auto;}
+		#contact {width:40%; background-color:#ccc; padding:1.5rem; border-radius: 1rem 0 0 1rem;}
+		#general {width:60%; background-color: #fff; padding:1.5rem; border-radius: 0 1rem 1rem 0; padding-bottom:40%;}
+		.flex-box {display:flex;}
+		
+		
+		/* TYPOGRAPHY */
+		/* <weight>: Use a value from 100 to 900
+		 <uniquifier>: Use a unique and descriptive class name */
+		html {
+          font-family: "Work Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight:300;
+          font-style: normal;
+        }
+		
+     	h1 {
+          font-family: "Bagel Fat One", system-ui;
+          font-weight: 400;
+          font-style: normal;
+		  margin-bottom: 0;
+        }
+		
+		h2, h3 {font-weight:500;}
+		
+		#general h3 {padding-bottom:3px; border-bottom:1px solid #666;}
+		
+		#general h4 {font-weight:500;}
+
+		#general p, #general h4 {margin:0;}
+		
+		#contact p {padding:0; margin:0 0 3px 0; font-size:.8rem;}
+		
+		#skills ul {list-style-type:none; flex-wrap:wrap; gap:9px; padding:0;}
+		#skills li {background-color:#999; padding:6px; color:white; font-weight:500;}
+		
+		/* TABLE */
+		th{font-weight:500;}
+		th, td {text-align:center;}
+		th:nth-child(1), td:nth-child(1) {width:15%; text-align:left;}
+		th:nth-child(2) {width:10%;}
+		th:nth-child(3) {width:10%;}
+		th:nth-child(4) {width:10%;}
+		
+	</style>	
+</head>
+
+<body>
+	<div id="wrapper" class="flex-box">
+		<section id="contact">
+			<h1>Sarah Luke</h1>
+			<h2>Graphic Designer</h2>
+			<h3>Contact</h3>
+			<p><a href="mailto:sluke4@montgomerycollege.edu">sluke4@montgomerycollege.edu</a></p>
+			<p><a href="tel:123-456-7890">123&#8209;456&#8209;7890</a></p>
+			<p>51 Mannakee Street<br>
+				Rockville, MD 20850</p>
+			<h3>Skills</h3>
+			<div id="skills" >
+				<ul class="flex-box">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Word</li>
+					<li>Excel</li>
+					<li>Graphic Design</li>
+					<li>Ophthalmic Technology</li>
+					<li>Data Entry</li>
+					
+				</ul>
+			</div>
+			
+		</section>
+		<section id="general">
+			<h3>Summary</h3>
+				<p>Here is a summary of my work experiences</p>
+			<h3>Experience</h3>
+				
+				<h4>Federal Government - Public Sector Program Operations Coordinator</h4>
+				<p><em>USPS/Deloitte</em> - <time datetime="01-2024"> Janaury 2024</time>&ndash;Current</p>
+					<ul>
+						<li>Efficient operations lead with experience in healthcare program management, team support, and employee onboarding.</li>
+						<br>
+						<li>Strong communicator skilled in quality assurance, call handling, and social media engagement to boost visibility and service standards.</li>
+					</ul>
+				 <h4>Remote Contract–Customer Service Representative</h4>
+				 <p><em>ACT, LLC</em> - <time datetime="10-2021"> October 2021</time>&ndash;<time datetime="09-2023">September 2023</time></p>
+					 <ul>
+						<li>Quality-focused and improvement-driven, consistently meeting client standards with accuracy and self-monitoring.</li>
+						<br>
+						<li>Productive and tech-savvy, completing tasks efficiently while assisting customers with online and web-related issues.</li>
+					 </ul>
+			
+				 <h4>Ophthalmic Testing Technician</h4>
+				 <p><em>Eye Physicians of Washington, Washington DC</em> - <time datetime="11-2020"> November 2020</time>&ndash;<time datetime="09-2021">September 2021</time></p>
+					 <ul>
+						<li>Skilled in ophthalmic diagnostics, supporting cataract surgery through precise eye measurements and lens positioning.</li>
+						<br>
+						<li>Experienced in visual field testing and Electroretinography, aiding in the diagnosis and monitoring of glaucoma and retinal health.</li>
+					 </ul>
+			
+				<h3>Education</h3>
+				<h4>Montgomery College, Rockville</h4>
+				<p>Digital Media and Web Technologies</p>
+					
+				<h3>Skill Level</h3>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col">Program</th>
+							<th scope="col">Beg</th>
+							<th scope="col">Int</th>
+							<th scope="col">Adv</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td scope="rel">HTML</td>
+							<td>&nbsp;</td>
+							<td>X</td>
+							<td>&nbsp;</td>
+						</tr>				
+						<tr>
+							<td scope="rel">Word</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>X</td>
+						</tr>
+						<tr>
+							<td scope="rel">Excel</td>
+							<td>X</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+		</section>
+		</div>
+	
+	
+</body>
+</html>
